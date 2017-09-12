@@ -8,12 +8,10 @@ import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
-import javax.persistence.Table;
 
 import org.rodrigovelaz.listservice.persistence.model.enums.ListType;
 
 @Entity
-@Table(name="list")
 public class List {
 
 	@Id
