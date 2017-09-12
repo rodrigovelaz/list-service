@@ -10,9 +10,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
+@EnableJpaRepositories
 @EnableSwagger2
 @ComponentScan
-@EnableJpaRepositories
 @EntityScan(basePackageClasses = {Jsr310JpaConverters.class}, basePackages = {"org.rodrigovelaz" })
 public class ListServiceApplication {
 
